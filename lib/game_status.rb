@@ -18,7 +18,9 @@ WIN_COMBINATIONS = [
 def won? (board)
   WIN_COMBINATIONS.each |combo| do
     positions[board[combo[0]],board[combo[1]],board[combo[2]]] #create an array of values in the positions required for a win
-    if(positions[0]==positions[1]&& positions[1]==positions[2])
+    if(positions[0]==positions[1]&& positions[1]==positions[2]) #if they match
       return combo
+    else 
+      return false
   end
 end
