@@ -25,3 +25,8 @@ def won? (board)
   end
   return false #no match found
 end
+
+def full? (board)
+  board.all? do |spot|
+    spot =="X" || spot == "O"
+end
