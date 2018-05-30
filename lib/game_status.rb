@@ -42,14 +42,8 @@ def draw? (board)
 end
 
 def over?(board)
-  if draw?(board) #|| won?(board))
-    puts "draw"
+  if (draw?(board) || won?(board))
     return true
   end
-  if won?(board)
-    puts "won"
-    return true
-  else
   return false
-  end
 end
