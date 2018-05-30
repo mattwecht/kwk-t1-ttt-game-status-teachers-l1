@@ -47,3 +47,8 @@ def over?(board)
   end
   return false
 end
+
+def winner? (board)
+  index = won?(board)
+  if(won?(board) != false)
+end
