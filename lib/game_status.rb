@@ -12,8 +12,7 @@ WIN_COMBINATIONS = [
   [2,4,6],
   [0,3,6], # vertical
   [2,5,8],
-  [1,4,7],
-  # ETC, an array for each win combination
+  [1,4,7]
 ]
 def won? (board)
   WIN_COMBINATIONS.each |combo| do
