@@ -31,3 +31,10 @@ def full? (board)
     spot =="X" || spot == "O"
   end
 end
+
+def draw? (board)
+  if won?(board) == false && full?(board)
+    return true
+  end
+  return true
+end
