@@ -40,11 +40,11 @@ def draw? (board)
 end
 
 def over?(board)
-  if(draw?(board) #|| won?(board))
+  if draw?(board) #|| won?(board))
     puts "draw"
     return true
   end
-  if(won?(board))
+  if won?(board)
     puts "won"
     return true
   else
